@@ -14,7 +14,54 @@ a {
     color: #000;
 }
 
+.signup-container {
+    margin: 0 45px;
+}
+
 .promo-text {
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.signup-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px 0;
+}
+
+.form-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+input {
+    padding: 8px 0;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+    padding: 8px;
+}
+
+button {
+    margin: 25px 0;
+    padding: 15px 50px;
+    background-color: #DBB42C;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-prompt {
+    font-weight: 500;
+}
+
+span {
+    color: #DBB42C;
 }
