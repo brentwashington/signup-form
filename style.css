@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -41,6 +42,7 @@ a {
 
 .signup-container {
     margin: 0 45px;
+    align-content: center;
 }
 
 .promo-text {
@@ -51,23 +53,31 @@ a {
 .signup-form {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 15px 0;
+    padding: 20px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 .form-entry {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 300px;
     padding: 15px 0;
     font-weight: 500;
+}
+
+label {
+    margin-bottom: 8px;
 }
 
 input {
     padding: 8px 0;
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=password] {
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
     padding: 8px;
 }
 
