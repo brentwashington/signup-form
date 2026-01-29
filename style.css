@@ -13,57 +13,9 @@ body {
     color: #fff;
 }
 
-.flex-container {
-    display: flex;
-}
-
-.image-container {
-    height: 100vh;
-    width: 50%;
-}
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.image-credit {
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-}
-
+/** Common Styles **/
 a {
     color: #fff;
-}
-
-.signup-container {
-    margin: 0 45px;
-    align-content: center;
-}
-
-.promo-text {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.signup-form {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 20px;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-}
-
-.form-entry {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    padding: 15px 0;
-    font-weight: 500;
 }
 
 label {
@@ -79,6 +31,11 @@ input[type=email],
 input[type=tel],
 input[type=password] {
     padding: 8px;
+}
+
+.promo-text {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 button {
@@ -99,4 +56,92 @@ button {
 
 span {
     color: #DBB42C;
+}
+
+/** Mobile **/
+@media screen and (max-width: 769px) {
+    .flex-container {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .image-credit {
+        display: block;
+        text-align: center;
+        font-size: .8em;
+    }
+
+    .form-entry {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        padding: 15px 0;
+        font-weight: 500;
+    }
+
+    .signup-container {
+        margin: 25px 45px;
+        justify-content: center;
+    }
+
+    .signup-form {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+}
+
+/** Desktop **/
+@media screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .image-container {
+        height: 100vh;
+        width: 50%;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .image-credit {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+    }
+
+    .signup-container {
+        margin: 0 45px;
+        align-content: center;
+    }
+
+    .signup-form {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .form-entry {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        padding: 15px 0;
+        font-weight: 500;
+    }
 }
